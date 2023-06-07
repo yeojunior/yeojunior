@@ -1,0 +1,451 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/*headr*/
+.nav-bar{
+  position: fixed;
+  width: 100%;
+  z-index: 12;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.nav-bar > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-bar > ul > li > a {
+  padding: 10px;
+  background: lightgrey;
+}
+.nav-bar > ul > li > a:hover {
+  background: #173459;
+  color: #f8f9f9;
+}
+.nav-bar .active {
+  background: #173459;
+  color: #f8f9f9;
+}
+.nav-bar li {
+  float: left;
+  width: 16.66%; /* 100% / 4 (number of li elements) = 25% */
+  text-align: center;
+  border-right: 1px solid #333; /* for the borders */
+}
+.nav-bar li:last-child {
+  border: none;
+}
+/*body*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+/*footer*/
+footer {
+  color: #fff;
+  background: #333;
+  position: relative; /* required to position the copyright at the bottom */
+  font-size: 80%;
+}
+.footer-copyright {
+  width: 100%;
+  height: 40px;
+  background: #111;
+  /* positions the copyright at the bottom of the footer */
+  padding: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.footer-body {
+  margin-bottom: 100px;
+  padding: 70px;
+}
+.footer-body > div:first-child {
+  font-size: 150%;
+}
+.footer-body ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-body li > a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 7px;
+}
+
+
+.banner{
+  width: 100%;
+  position: absolute;
+  height: 35rem;
+  background-image: url(image/image2fond.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.banner h2{
+  padding-top: 10%;
+  font-size: 30px;
+  position: relative;
+  top: 10rem;
+  font-family: proppins;
+  text-align: center;
+  text-transform: uppercase;
+  color:#ddd;
+}
+.jjk:hover{
+  color: orange;
+  background-color: green;
+  cursor: pointer;
+}
+
+.content{
+  position: relative;
+  z-index: 10;
+} 
+.content>div{
+  padding: 15px;
+}
+
+ .content h2{
+  font-family: bignoodletitling;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+  
+}
+.wrapper h2{
+  position: relative;
+  top: 40rem;
+}
+.slide1{
+  position: relative;
+  width: 25%;
+  border: 1px solid #000;
+  height: 35%;
+  top: 100px;
+  left: 10%;
+  text-align: center;
+  border-radius: 15px;
+  
+} 
+.slide2{
+  position: relative;
+  width: 25%;
+  border: 1px solid #000;
+  height: 10%;
+  left: 40%;
+  border-radius: 15px;
+  bottom: 150px;
+  text-align: center;
+}
+.slide3{
+  position: relative;
+  width: 70%;
+  border: 1px solid #000;
+  top: 14%;
+  left: 20%;
+  border-radius: 15px;
+  top: 18%;
+  text-align: center;
+}
+.slide4{
+  position: relative;
+  width: 25%;
+  border: 1px solid #000;
+  height: 250px;
+  left: 70%;
+  border-radius: 15px;
+ bottom: 558px;
+ text-align: center;
+}
+#parcour h3{
+  font-family: bignoodletitling;
+  position: relative;
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 40px;
+  bottom: -20rem;
+}
+.para{
+  position: relative;
+  color: red;
+  width: 55%;
+  border: 1px solid #000;
+  border-radius: 15px;
+  left: 400px;
+
+}
+#image img{
+  width:10%;
+  animation-name: gliss;
+  animation-duration: 10s;
+  position: relative;
+  animation-iteration-count: infinite;
+  bottom: -20rem;
+
+}
+@keyframes gliss{
+  from{
+    position: relative;
+    left: 0;
+  }
+  to{
+    left: 100rem;
+  }
+  }
+
+
+  #Ambition h3{
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    bottom: -25rem;
+    left: 0rem;
+  }
+  
+  .Acu h4{
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .Acu{
+    width: 25%;
+    position: absolute;
+    top: 220%;
+    left: 10%;
+    border: 1px solid #000;
+    border-radius: 15px;
+  }
+  
+  .apres{
+    width: 25%;
+    position: absolute;
+    top: 220%;
+    left: 40%;
+    border: 1px solid #000;
+    border-radius: 15px;
+  }
+  
+  .five-years{
+    width: 25%;
+    position: absolute;
+    top: 220%;
+    left: 70%;
+    border: 1px solid #000;
+    border-radius: 15px;
+  }
+  
+  .foot{
+    float: left;
+    height: 20rem;
+     
+   }
+   .football{
+     width: 93rem;
+    overflow: hidden;
+    margin: 150px auto;
+    border: 1px solid #000;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    bottom: -4rem;
+    background-color: #5e7669;
+   }
+   
+   .foot11{
+     width: calc(300px *3);
+     animation: passe 20s infinite;
+     position: relative;
+     left: 900px;
+     
+   }
+   @keyframes passe{
+     0%{
+       transform: translateX(-300px);
+     }
+     13%{
+       transform: translateX(-600px);
+     }
+      23%{
+      transform: translateX(-900px);
+    }
+    33%{
+      transform: translateX(-1200px);
+    }
+    66%{
+      transform: translateX(-1400px);
+    }
+
+     100%{
+       transform: translateX(0);
+     } 
+   }
+   
+   #loisire{
+    display: inline-block;
+    
+   }
+   #loisire h2{
+    text-align: center;
+    position: relative;
+    bottom: -4rem;
+    left: 40rem;
+    color:orange;
+    text-decoration: underline;
+   }
+  
+   span{
+    color: orange;
+   }
+   .first{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    !important;
+   }
+
+   .food{
+    float: left;
+    height: 300PX;
+     
+   }
+   .Food{
+    width: 93rem;
+    overflow: hidden;
+    margin: 150px auto;
+    border: 1px solid #000;
+    border-radius: 15px;
+    position: relative;
+    background-color: #5e7669;
+    bottom: -4rem;
+   }
+   .food1{
+     width: calc(300px *3);
+     animation: passe 20s infinite;
+     position: relative;
+     left: 900px;
+     
+   } 
+    @media  screen and  (max-width:1200px){
+    .banner{
+      width: 200%;
+    }
+    footer{
+      width: 200%;
+    }
+    /* .slide4{
+      left: 137%;
+      bottom: 700px;
+      width: 40%;
+      height: 330px;
+      text-align: center;
+    }
+    .slide2{
+      left: 86%;
+      width: 35%;
+      bottom: 220px;
+      color: blue;
+    }
+    .slide1{
+      left: 35%;
+      width: 35%;
+    }
+    .slide3{
+   bottom: 150px;
+      left: 600px;
+      width: 90%;
+    }
+    .wraper h2{
+      text-align: center;
+    }
+    #parcour h3{
+      bottom: 1550px;
+      left: 1000px;
+    }
+
+    .para{
+       width: 90%; 
+      left: 600px;
+      bottom: 250px;
+    
+    }
+     #image img{
+      width:10%;
+      bottom: 250px;
+      animation-duration: 20s;
+    } 
+
+    @keyframes gliss{
+      from{
+        position: relative;
+        left: 0;
+      }
+      to{
+        left: 220%;
+      }
+      }
+    
+    
+       #Ambition h3{
+        left: 900px;
+      }
+      
+ 
+      .Acu{
+        width: 25%;
+        left: 60%;
+      }
+      
+      .apres{
+        width: 25%;
+        left: 90%;
+      }
+      
+      .five-years{
+        width: 25%;
+        left: 120%;
+      }
+
+      #loisire h2{
+        top: 350px;
+        left: 500px;
+       }
+       .football{
+        left: 130px;
+        width: 800px;
+       }
+       .Food{
+        position: relative;
+        left: 1000px;
+        width: 800px;
+       }
+   }
+   @media  (max-width:800px)  {
+    body{
+      background-color: yellow;
+    }*/ 
+    
+   } 
+
+   /* @media only screen and (min-width: 00px)an{
+    .slide2{
+      background-color: #000;
+    } */
+   
